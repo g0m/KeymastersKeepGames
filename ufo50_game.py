@@ -399,7 +399,7 @@ class UFO50Game(Game):
 
     @property
     def include_cherry(self) -> bool:
-        return bool (self.archipelago_optoins.UFO50_include_cherry.value)
+        return bool (self.archipelago_options.UFO50_include_cherry.value)
 
     # Archipelago Options
 class UFO50IncludeCherry(Toggle):
