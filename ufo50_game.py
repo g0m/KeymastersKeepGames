@@ -37,7 +37,7 @@ class UFO50Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=4,
+                weight=5,
             ),
             GameObjectiveTemplate(
                 label="Get GIFTNUM gifts",
@@ -120,7 +120,7 @@ class UFO50Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=3,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="After entering the terminal code GOOD-GIRL, beat Fist Hell using FISTCHAR",
@@ -129,7 +129,7 @@ class UFO50Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=2,
+                weight=1,
             ),
             GameObjectiveTemplate(
                 label="Get the MOONEGG in Mooncat",
