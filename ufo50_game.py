@@ -252,7 +252,7 @@ class UFO50Game(Game):
             "Cyber Owls",
         ]
 
-    def winconditions() -> List[str]:
+    def winconditions(self) -> List[str]:
         if self.include_cherry:
             return [
                 "Win",
