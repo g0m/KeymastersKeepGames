@@ -22,7 +22,11 @@ class MonsterTrain2Game(Game):
 
     name = "Monster Train 2"
     platform = KeymastersKeepGamePlatforms.PC
-    platforms_other = None
+    platforms_other = [
+        KeymastersKeepGamePlatforms.SW,
+        KeymastersKeepGamePlatforms.PS5,
+        KeymastersKeepGamePlatforms.XSX,
+    ]
 
     is_adult_only_or_unrated = False
 
