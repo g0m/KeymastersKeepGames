@@ -145,7 +145,7 @@ class MonsterTrain2Game(Game):
             GameObjectiveTemplate(
                 label="Win a run with any MUTNUM mutator(s)",
                 data={
-                    "MUTNUM": (self.mutatornums, 1),
+                    "MUTNUM": (self.mutatorNums, 1),
                 },
                 is_time_consuming=False,
                 is_difficult=False,
@@ -154,7 +154,7 @@ class MonsterTrain2Game(Game):
             GameObjectiveTemplate(
                 label="Beat any CHALLENGENUM Dimensional Challenges",
                 data={
-                    "CHALLENGENUM": (self.challengenums, 1),
+                    "CHALLENGENUM": (self.challengeNums, 1),
                 },
                 is_time_consuming=True,
                 is_difficult=False,
@@ -163,7 +163,7 @@ class MonsterTrain2Game(Game):
             GameObjectiveTemplate(
                 label="Win a run with STEWARDNUM stewards in your deck",
                 data={
-                    "STEWARDNUM": (self.stewardnums, 1),
+                    "STEWARDNUM": (self.stewardNums, 1),
                 },
                 is_time_consuming=False,
                 is_difficult=False,
@@ -172,7 +172,7 @@ class MonsterTrain2Game(Game):
             GameObjectiveTemplate(
                 label="Complete TRIAL trials",
                 data={
-                    "TRIAL": (self.trialnums, 1),
+                    "TRIAL": (self.trialNums, 1),
                 },
                 is_time_consuming=False,
                 is_difficult=False,
@@ -181,7 +181,7 @@ class MonsterTrain2Game(Game):
             GameObjectiveTemplate(
                 label="Complete TRIAL trials in a single run",
                 data={
-                    "TRIAL": (self.trialnums, 1),
+                    "TRIAL": (self.trialNums, 1),
                 },
                 is_time_consuming=False,
                 is_difficult=True,
@@ -352,7 +352,7 @@ class MonsterTrain2Game(Game):
         ]
 
     @staticmethod
-    def mutatornums() -> List[str]:
+    def mutatorNums() -> List[str]:
         return [
             "1",
             "2",
