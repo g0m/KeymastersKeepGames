@@ -37,7 +37,7 @@ class UFO50Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=5,
+                weight=6,
             ),
             GameObjectiveTemplate(
                 label="Get GIFTNUM gifts",
@@ -46,7 +46,7 @@ class UFO50Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=4,
+                weight=5,
             ),
             GameObjectiveTemplate(
                 label="WINCON QPGAME",
@@ -56,7 +56,7 @@ class UFO50Game(Game):
                 },
                 is_time_consuming=False,
                 is_difficult=False,
-                weight=4,
+                weight=5,
             ),
             GameObjectiveTemplate(
                 label="WINCON GAMENUM games",
@@ -66,7 +66,7 @@ class UFO50Game(Game):
                 },
                 is_time_consuming=True,
                 is_difficult=False,
-                weight=4,
+                weight=5,
             ),
             GameObjectiveTemplate(
                 label="Get a top 3 highscore in GAMENUM different high score boards",
@@ -173,9 +173,9 @@ class UFO50Game(Game):
                 data={
                     "STREAK": (self.streak, 1),
                 },
-                is_time_consuming=False,
+                is_time_consuming=True,
                 is_difficult=False,
-                weight=3,
+                weight=2,
             ),
             GameObjectiveTemplate(
                 label="Complete Overbold with a final score of at least SCORE",
@@ -194,6 +194,24 @@ class UFO50Game(Game):
                 is_time_consuming=False,
                 is_difficult=True,
                 weight=1,
+            ),
+            GameObjectiveTemplate(
+                label="Beat Scenario SCENARIO of Lords of Diskonia.",
+                data={
+                    "SCENARIO": (self.diskscenarios, 1),
+                },
+                is_time_consuming=False,
+                is_difficult=False,
+                weight=3,
+            ),
+            GameObjectiveTemplate(
+                label="Beat TRIAL in Avianos.",
+                data={
+                    "SCENARIO": (self.avianscenarios, 1),
+                },
+                is_time_consuming=False,
+                is_difficult=False,
+                weight=3,
             ),
         ]
 
@@ -394,6 +412,32 @@ class UFO50Game(Game):
             "4100",
             "4200",
             "4300",
+        ]
+
+    @staticmethod
+    def diskscenarios() -> List[str]:
+        return [
+            "1. NARROW PASS",
+            "2. EAST VALLEY",
+            "3. THE ISLAND",
+            "4. GOLD RUSH",
+            "5. WAR SPIDERS",
+            "6. PROMOTION",
+            "7. TUNED UP",
+            "8. MINER ISSUE",
+            "9. LAND BRIDGES",
+            "10. THE REGICIDE",
+        ]
+
+    @staticmethod
+    def avianscenarios() -> List[str]:
+        return [
+            "ADULT",
+            "TRIAL 1",
+            "TRIAL 2",
+            "TRIAL 3",
+            "TRIAL 4",
+            "TRIAL 5",
         ]
 
     @property
