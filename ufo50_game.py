@@ -22,7 +22,9 @@ class UFO50Game(Game):
 
     name = "UFO 50"
     platform = KeymastersKeepGamePlatforms.PC
-    platforms_other = None
+    platforms_other = [
+        KeymastersKeepGamePlatforms.SW,
+    ]
 
     is_adult_only_or_unrated = True
 
