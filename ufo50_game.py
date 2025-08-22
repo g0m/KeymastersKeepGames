@@ -209,7 +209,7 @@ class UFO50Game(Game):
             GameObjectiveTemplate(
                 label="Beat TRIAL in Avianos.",
                 data={
-                    "SCENARIO": (self.avianscenarios, 1),
+                    "TRIAL": (self.avianscenarios, 1),
                 },
                 is_time_consuming=False,
                 is_difficult=False,
