@@ -307,6 +307,7 @@ class PeglinGame(Game):
             "Gopher Gold",
             "Viridian Trinket",
             "Status Symbol",
+            "Tender Cactus",
         ]
 
     @staticmethod
