@@ -26,7 +26,7 @@ class UFO50Game(Game):
         KeymastersKeepGamePlatforms.SW,
     ]
 
-    is_adult_only_or_unrated = True
+    is_adult_only_or_unrated = False
 
     options_cls = UFO50ArchipelagoOptions
 
